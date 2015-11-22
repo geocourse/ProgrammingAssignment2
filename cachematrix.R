@@ -1,10 +1,10 @@
 ## [The above functions cache the inverse matrix of a given matrix]
 
-## [The second function:
-## 1.checks if the inverse matrix has already been computed
-## 2.if yes, it gets the inverse matrix values already computed
-##   if not, it computes the inverse matrix 
-##   and sets the values in the cache via the setmatrix function]
+## [The first function:
+## 1.sets the value of the matrix
+## 2.gets the value of the matrix
+## 3.sets the inverse matrix values and finally
+## 4.gets the inverse matrix values]
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -22,12 +22,12 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
+## [The second function:
+## 1.checks if the inverse matrix has already been computed
+## 2.if yes, it gets the inverse matrix values already computed
+##   if not, it computes the inverse matrix 
+##   and sets the values in the cache via the setmatrix function]
 
-## [The first function:
-## 1.sets the value of the matrix
-## 2.gets the value of the matrix
-## 3.sets the inverse matrix values and finally
-## 4.gets the inverse matrix values]
 
 cacheSolve <- function(x, ...) {
   
